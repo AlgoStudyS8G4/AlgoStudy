@@ -17,27 +17,29 @@ public class Main {
 		for (int i = 0; i < W; i++) {
 			world[i] = Integer.parseInt(st.nextToken());
 		}
-		world[W] = world[W - 1];
 
+		// 왼쪽 기둥이 될 어떤 지점 left에서 시작한다.
+		// 오른쪽 기둥이 될 어떤 지점 right를 찾는다.
+		// 오른쪽 기둥이 left보다 기둥높이가 크다면, 해당 공간은 최대 left까지 물이 찬다.
+		// left보다 기둥높이가 작지만 right가 오른쪽 기둥이 되는 경우 = 오른쪽 기둥의 바로 오른쪽 값이 작은 경우
 		int left = 0;
 		int sum = 0;
-		while (left < W - 1) {
-			if (world[left] < world[left + 1]) {
-				left++;
-				continue;
-			}
-
+		while (left < W) {
 			int right = left + 1;
-			while (right < W && world[right] < world[left]) {
+			int max = right;
+			while (right < W && world[left] > world[right]) {
+				max = world[max] < world[right] ? right : max;
 				right++;
 			}
 
-			int min = Math.min(world[left], world[right]);
-			for(int idx = left+1; idx < right; idx++) {
-				sum += (min - world[idx]);
+			// 끝까지 가도 left보다 큰 기둥은 없다.
+			if (right == W + 1) {
+				// left~right 사이 그나마 큰 기둥 만큼 빗물이 고인다.
+				for (int idx = left; idx < max; idx++) {
+					
+				}
 			}
-			
-			left = right;
+
 		}
 
 		System.out.println(sum);
