@@ -22,7 +22,7 @@ SWEA 클럽 : [8기 광주4반 알고리즘 스터디](https://swexpertacademy.c
 |-----|-----|-----|-----|-----|-----|-----|
 ||[@shshshee](https://github.com/shshshee)|[@encoreKwang](https://github.com/encoreKwang)|[@leepeace](https://github.com/leepeace)|[@YeJinHong](https://github.com/YeJinHong)|[@ise-yen](https://github.com/ise-yen)||
 |1주차(23.01.07)||||||휴일|
-|2주차(23.01.14)|O|O|-|△|X|-|
+|2주차(23.01.14)|O|O|X(-)|O(△)|O(X)|-|
 |3주차(23.01.21)|-|-|-|-|-|-|
 |4주차(23.01.28)|-|-|-|-|-|-|
 
@@ -31,7 +31,7 @@ SWEA 클럽 : [8기 광주4반 알고리즘 스터디](https://swexpertacademy.c
 |:---:|---|---|
 |1주차(22.12.31 - 23.01.07)|BOJ|[14719번 빗물](https://www.acmicpc.net/problem/14719)|
 |2주차(23.01.07 - 23.01.14)||1주차와 같음|
-|3주차(23.01.14 - 23.01.21)|||
+|3주차(23.01.14 - 23.01.21)|BOJ|[5972번 인구이동](https://www.acmicpc.net/problem/5972)|
 |4주차(23.01.21 - 23.01.28)|||
 
 #### ✏ 개인 풀이 문제 : 
