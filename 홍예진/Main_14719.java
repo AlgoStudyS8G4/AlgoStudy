@@ -3,6 +3,7 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.StringTokenizer;
 
+// 1% 틀렸습니다.
 public class Main {
 	static int H, W;
 	static int[] world;
