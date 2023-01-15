@@ -43,7 +43,7 @@ public class Main {
 			for (Way nextWay : wayList[way.to]) {
 				if (dijkstra[way.to] + nextWay.cowCnt < dijkstra[nextWay.to]) {
 					dijkstra[nextWay.to] = dijkstra[way.to] + nextWay.cowCnt;
-					pq.add(nextWay);
+					pq.add(new Way(nextWay.to, dijkstra[nextWay.to]));
 				}
 			}
 		}
