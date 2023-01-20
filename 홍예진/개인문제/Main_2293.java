@@ -4,28 +4,26 @@ import java.io.InputStreamReader;
 import java.util.Arrays;
 import java.util.StringTokenizer;
 
+
+// not solved. 검토 필요.
 public class Main {
 	static int n, k, value[], ans;
 
-	static void solve() {
-		// dp[i][sum] : i번째 동전까지만 고려하여 j만큼의 가치를 채우는 경우의 수
-		// = dp[i-1][sum - value[i]] +
-		int[][] dp = new int[n][k + 1];
+	public static void solve() {
+		int[][] dp = new int[n + 1][k + 1];
+
+		// dp[idx][price] : 1~idx번째 동전까지만 사용하여 price 가격을 구성하는 방법의 수
+//		dp[0][0] = 1;
+		for(int i = value[1]; i <= k; i+= value[1])
+			dp[1][i] = 1;
 		
-		for (int sum = 0; sum <= k; sum++) {
-			if(sum%value[0] == 0)
-				dp[0][sum] = sum/value[0];
-		}
-		
-		for (int i = 1; i < n; i++) {
-			for (int sum = 0; sum <= k; sum++) {
-				int max = sum / value[i];
-				for (int j = 0; j <= max && 0 < sum - j * value[i] ; j++) {
-					dp[i][j] += dp[i-1][sum - j * value[i]];
-				}
+		for (int idx = 1; idx <= n; idx++) {
+			for(int price = 0; price <= k; price += value[idx]) {
+				dp[idx][k] += dp[idx-1][price];
 			}
 		}
-		System.out.println(dp[n-1][k]);
+		
+		System.out.println(dp[n][k]);
 	}
 
 	static void init() throws IOException {
@@ -33,9 +31,9 @@ public class Main {
 		StringTokenizer st = new StringTokenizer(br.readLine());
 		n = Integer.parseInt(st.nextToken());
 		k = Integer.parseInt(st.nextToken());
-		value = new int[n];
+		value = new int[n + 1];
 		ans = 0;
-		for (int i = 0; i < n; i++) {
+		for (int i = 1; i <= n; i++) {
 			value[i] = Integer.parseInt(br.readLine());
 		}
 		Arrays.sort(value);
@@ -43,6 +41,6 @@ public class Main {
 
 	public static void main(String[] args) throws IOException {
 		init();
-		solve();
+		System.out.println(ans);
 	}
 }
