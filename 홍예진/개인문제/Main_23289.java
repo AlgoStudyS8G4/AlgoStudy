@@ -43,17 +43,17 @@ public class Main {
 	public static boolean checkRightWalls(int[][] tempMap, int row, int col) {
 		
 		// 바로 왼쪽에서 바람이 올때
-		if(inBoundary(row, col-1) && tempMap[row][col-1] > 0 && !walls[3][row][col])
+		if(inBoundary(row, col-1) && tempMap[row][col-1] > 0 && !walls[1][row][col-1])
 			return true;
 		
 		// 좌측하단에서 바람이 올때
 		if(inBoundary(row+1, col-1) && tempMap[row+1][col-1] > 0
-				&& !walls[0][row+1][col-1] && !walls[3][row][col])
+				&& !walls[0][row+1][col-1] && !walls[1][row][col-1])
 			return true;
 		
 		// 좌측 상단에서 바람이 올때
 		if(inBoundary(row-1, col-1) && tempMap[row-1][col-1] > 0
-				&& !walls[2][row-1][col-1] && !walls[3][row][col])
+				&& !walls[0][row][col-1] && !walls[1][row][col-1])
 			return true;
 		
 		return false;
@@ -63,29 +63,45 @@ public class Main {
 
 	public static void blow() {
 
-		// 모든 온풍기에서 바람이 한 번 나온다.
+		// 온풍기에서 오른쪽으로 바람이 한 번 나온다.
 		for (Point right : machines[1]) {
-			int[][] tempMap = new int[R][C];
+			System.out.println(right.i +" "+right.j+" 에서 오른쪽으로 바람이 분다.");
 			for (int j = 1; j <= 5; j++) { // 우측으로 한칸 이동
-				int row = right.i - j;
+				int row = right.i - j + 1;
 				int col = right.j + j;
 
 				int count = 2 * j - 1; // 1, 3, 5, 7, 9칸에 영향
 				int temperature = 6 - j;
-				while (count-- > 0 && row < R) { // 각 열마다 온도 증가
-					if(checkRightWalls(tempMap, row, col))
-						tempMap[row][col] += temperature;
+				while (count-- > 0 && inBoundary(row, col)) { // 각 열마다 온도 증가
+					if(checkRightWalls(map, row, col)) {
+						map[row][col] += temperature;
+
+						for (int ti = 1; ti <= R; ti++) {
+							for (int tj = 1; tj <= C; tj++) {
+								System.out.print(map[ti][tj]+" ");
+							}
+							System.out.println();
+						}
+						
+						System.out.println();
+					}
 					row++;
 				}
 			}
+			
 		}
+		
+		
 
+		
 		for (Point left : machines[2]) {
 
 		}
+		
 		for (Point up : machines[3]) {
 
 		}
+		
 		for (Point down : machines[4]) {
 
 		}
@@ -122,35 +138,34 @@ public class Main {
 			for (int j = 1; j <= C; j++) {
 				int num = Integer.parseInt(st.nextToken());
 				map[i][j] = num;
-				if (num == 5)
+				if (num == 5) {
 					checkList.add(new Point(i, j));
+					map[i][j] = 0;
+				}
 				else if (num > 0) {
 					machines[num].add(new Point(i, j));
 				}
 			}
 		}
 
-		walls = new boolean[4][R + 1][C + 1];
+		W = Integer.parseInt(br.readLine());
+		walls = new boolean[2][R + 1][C + 1];
 		for (int i = 0; i < W; i++) {
 			st = new StringTokenizer(br.readLine());
 			int x = Integer.parseInt(st.nextToken());
 			int y = Integer.parseInt(st.nextToken());
 			int t = Integer.parseInt(st.nextToken());
 			walls[t][x][y] = true;
-			// walls[0][x][y] : (x,y)와 (x-1, y) 사이에 벽이 있다.
-			// walls[1][x][y] : (x,y)와 (x, y+1) 사이에 벽이 있다.
-			// walls[2][x][y] : (x,y)와 (x+1, y) 사이에 벽이 있다.
-			// walls[3][x][y] : (x,y)와 (x, y-1) 사이에 벽이 있다.
-			// => walls[0][x][y] = walls[2][x-1][y]
-			// => walls[1][x][y] = walls[3][x][y+1]
-			if (t == 0)
-				walls[2][x - 1][y] = true;
-			if (t == 1)
-				walls[3][x][y + 1] = true;
 		}
 
 		ans = 0;
 		solve();
+		for (int ti = 1; ti <= R; ti++) {
+			for (int tj = 1; tj <= C; tj++) {
+				System.out.print(map[ti][tj]+" ");
+			}
+			System.out.println();
+		}
 		System.out.println(ans);
 	}
 }
