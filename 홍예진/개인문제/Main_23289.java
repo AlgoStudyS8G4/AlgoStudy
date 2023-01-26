@@ -38,77 +38,90 @@ public class Main {
 			clone[i] = map[i].clone();
 		return clone;
 	}
-	
+
 	// 오른쪽으로 온풍기가 불때 row, col위치가 벽에 가로막혔는지 확인.
 	public static boolean checkRightWalls(int[][] tempMap, int row, int col) {
-		
+
 		// 바로 왼쪽에서 바람이 올때
-		if(inBoundary(row, col-1) && tempMap[row][col-1] > 0 && !walls[1][row][col-1])
+		if (inBoundary(row, col - 1) && tempMap[row][col - 1] > 0 && !walls[1][row][col - 1])
 			return true;
-		
+
 		// 좌측하단에서 바람이 올때
-		if(inBoundary(row+1, col-1) && tempMap[row+1][col-1] > 0
-				&& !walls[0][row+1][col-1] && !walls[1][row][col-1])
+		if (inBoundary(row + 1, col - 1) && tempMap[row + 1][col - 1] > 0 && !walls[0][row + 1][col - 1]
+				&& !walls[1][row][col - 1])
 			return true;
-		
+
 		// 좌측 상단에서 바람이 올때
-		if(inBoundary(row-1, col-1) && tempMap[row-1][col-1] > 0
-				&& !walls[0][row][col-1] && !walls[1][row][col-1])
+		if (inBoundary(row - 1, col - 1) && tempMap[row - 1][col - 1] > 0 && !walls[0][row][col - 1]
+				&& !walls[1][row][col - 1])
 			return true;
-		
+
 		return false;
-		
+
 	}
-	
+
+	public static void addTemp(int[][] temp) {
+		for (int i = 1; i <= R; i++) {
+			for (int j = 1; j <= C; j++) {
+				map[i][j] += temp[i][j];
+			}
+		}
+	}
 
 	public static void blow() {
 
 		// 온풍기에서 오른쪽으로 바람이 한 번 나온다.
 		for (Point right : machines[1]) {
-			System.out.println(right.i +" "+right.j+" 에서 오른쪽으로 바람이 분다.");
-			for (int j = 1; j <= 5; j++) { // 우측으로 한칸 이동
+			int[][] temp = new int[R + 1][C + 1];
+			System.out.println(right.i + " " + right.j + " 에서 오른쪽으로 바람이 분다.");
+			if (inBoundary(right.i, right.j + 1))
+				temp[right.i][right.j + 1] = 5;
+
+			for (int j = 2; j <= 5; j++) { // 우측으로 한칸 이동
 				int row = right.i - j + 1;
 				int col = right.j + j;
-
 				int count = 2 * j - 1; // 1, 3, 5, 7, 9칸에 영향
 				int temperature = 6 - j;
-				while (count-- > 0 && inBoundary(row, col)) { // 각 열마다 온도 증가
-					if(checkRightWalls(map, row, col)) {
-						map[row][col] += temperature;
+				while (count-- > 0) { // 각 열마다 온도 증가
+					if (!inBoundary(row, col)) {
+						row++;
+						continue;
+					}
+					if (checkRightWalls(temp, row, col)) {
+						temp[row][col] += temperature;
 
 						for (int ti = 1; ti <= R; ti++) {
 							for (int tj = 1; tj <= C; tj++) {
-								System.out.print(map[ti][tj]+" ");
+								System.out.print(temp[ti][tj] + " ");
 							}
 							System.out.println();
 						}
-						
+
 						System.out.println();
 					}
 					row++;
 				}
 			}
-			
-		}
-		
-		
 
-		
+			addTemp(temp);
+
+		}
+
 		for (Point left : machines[2]) {
 
 		}
-		
+
 		for (Point up : machines[3]) {
 
 		}
-		
+
 		for (Point down : machines[4]) {
 
 		}
 	}
 
 	public static boolean inBoundary(int i, int j) {
-		return 0 <= i && 0 <= j && i < R && j < C;
+		return 0 < i && 0 < j && i <= R && j <= C;
 	}
 
 	public static void solve() {
@@ -141,8 +154,7 @@ public class Main {
 				if (num == 5) {
 					checkList.add(new Point(i, j));
 					map[i][j] = 0;
-				}
-				else if (num > 0) {
+				} else if (num > 0) {
 					machines[num].add(new Point(i, j));
 				}
 			}
@@ -162,7 +174,7 @@ public class Main {
 		solve();
 		for (int ti = 1; ti <= R; ti++) {
 			for (int tj = 1; tj <= C; tj++) {
-				System.out.print(map[ti][tj]+" ");
+				System.out.print(map[ti][tj] + " ");
 			}
 			System.out.println();
 		}
