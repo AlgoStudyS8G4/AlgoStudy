@@ -23,23 +23,23 @@ SWEA 클럽 : [8기 광주4반 알고리즘 스터디](https://swexpertacademy.c
 ||[@shshshee](https://github.com/shshshee)|[@encoreKwang](https://github.com/encoreKwang)|[@leepeace](https://github.com/leepeace)|[@YeJinHong](https://github.com/YeJinHong)|[@ise-yen](https://github.com/ise-yen)||
 |1주차(23.01.07)||||||휴일|
 |2주차(23.01.14)|O|O|X(-)|O(△)|O(X)|-|
-|3주차(23.01.21)|-|-|-|-|-|-|
-|4주차(23.01.28)|-|-|-|-|-|-|
+|3주차(23.01.21)||||||설휴|
+|4주차(23.01.28)|O(X)|O(O)|O(O)|O(O)|O(X)|-|
 
 #### ✒ 공통 풀이 문제
 |주차|사이트|문제|
 |:---:|---|---|
 |1주차(22.12.31 - 23.01.07)|BOJ|[14719번 빗물](https://www.acmicpc.net/problem/14719)|
 |2주차(23.01.07 - 23.01.14)||1주차와 같음|
-|3주차(23.01.14 - 23.01.21)|BOJ|[5972번 인구이동](https://www.acmicpc.net/problem/5972)|
-|4주차(23.01.21 - 23.01.28)|||
+|3주차(23.01.14 - 23.01.21)|BOJ|[5972번 택배배송](https://www.acmicpc.net/problem/5972)|
+|4주차(23.01.21 - 23.01.28)||3주차와 같음|
 
 #### ✏ 개인 풀이 문제 : 
 |풀이자|1주차<br/>(22.12.31 - 23.01.07)|2주차<br/>(23.01.07 - 23.01.14)|3주차<br/>(23.01.14 - 23.01.21)|4주차<br/>(23.01.21 - 23.01.28)|
 |---|---|---|---|---|
-|김세희|-|[PRO 마법의 엘리베이터](https://school.programmers.co.kr/learn/courses/30/lessons/148653)|-|-|
+|김세희|-|[PRO 마법의 엘리베이터](https://school.programmers.co.kr/learn/courses/30/lessons/148653)|-|[PRO 할인행사](https://school.programmers.co.kr/learn/courses/30/lessons/131127)|
 |이광용|-|-|-|-|
-|이해민|-|-|-|-|
+|이해민|-|-|-|[BOJ 2504](https://www.acmicpc.net/problem/2504)|
 |홍예진|[BOJ 1979](https://www.acmicpc.net/problem/1979)<br/>[BOJ 2212](https://www.acmicpc.net/problem/2212)<br/>[BOJ 15711](https://www.acmicpc.net/problem/15711)|[BOJ 3197](https://www.acmicpc.net/problem/3197)<br/>[BOJ 7579](https://www.acmicpc.net/problem/7579)<br/>[BOJ 2306](https://www.acmicpc.net/problem/2306)<br/>[BOJ 12919](https://www.acmicpc.net/problem/12919)|-|-|
 |황예은|-|-|-|-|
 
