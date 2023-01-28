@@ -69,42 +69,32 @@ public class Main {
 	}
 
 	public static void blow() {
-
 		// 온풍기에서 오른쪽으로 바람이 한 번 나온다.
 		for (Point right : machines[1]) {
 			int[][] temp = new int[R + 1][C + 1];
-			System.out.println(right.i + " " + right.j + " 에서 오른쪽으로 바람이 분다.");
-			if (inBoundary(right.i, right.j + 1))
+			System.out.println("right : "+right.i+" "+right.j);
+			if(inBoundary(right.i, right.j+1)) 	
 				temp[right.i][right.j + 1] = 5;
+			int[][][] delta = {
+					{ { -1, 2 }, { 0, 2 }, { 1, 2 } },
+					{ { -2, 3 }, { -1, 3 }, { 0, 3 }, { 1, 3 }, { 2, 3 } },
+					{ { -3, 4 }, { -2, 4 }, { -1, 4 }, { 0, 4 }, { 1, 4 }, { 2, 4 }, { 3, 4 } },
+					{ { -4, 5 }, { -3, 5 }, { -2, 5 }, { -1, 5 }, { 0, 5 }, { 1, 5 }, { 2, 5 }, { 3,5 }, { 4, 5 } } };
 
-			for (int j = 2; j <= 5; j++) { // 우측으로 한칸 이동
-				int row = right.i - j + 1;
-				int col = right.j + j;
-				int count = 2 * j - 1; // 1, 3, 5, 7, 9칸에 영향
-				int temperature = 6 - j;
-				while (count-- > 0) { // 각 열마다 온도 증가
-					if (!inBoundary(row, col)) {
-						row++;
+			for (int warm = 4; warm > 0; warm--) {
+				for (int[] d : delta[4-warm]) {
+					int row = right.i + d[0];
+					int col = right.j + d[1];
+//					System.out.println(row+" "+col);
+					if (!inBoundary(row, col))
 						continue;
-					}
+					
 					if (checkRightWalls(temp, row, col)) {
-						temp[row][col] += temperature;
-
-						for (int ti = 1; ti <= R; ti++) {
-							for (int tj = 1; tj <= C; tj++) {
-								System.out.print(temp[ti][tj] + " ");
-							}
-							System.out.println();
-						}
-
-						System.out.println();
+						temp[row][col] = warm;			
 					}
-					row++;
 				}
 			}
-
 			addTemp(temp);
-
 		}
 
 		for (Point left : machines[2]) {
