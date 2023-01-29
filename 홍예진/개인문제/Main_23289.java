@@ -98,6 +98,29 @@ public class Main {
 		}
 
 		for (Point left : machines[2]) {
+			int[][] temp = new int[R + 1][C + 1];
+			if(inBoundary(left.i, left.j - 1)) 	
+				temp[left.i][left.j - 1] = 5;
+			int[][][] delta = {
+					{ { -1, -2 }, { 0, -2 }, { 1, -2 } },
+					{ { -2, -3 }, { -1, -3 }, { 0, -3 }, { 1, -3 }, { 2, -3 } },
+					{ { -3, -4 }, { -2, -4 }, { -1, -4 }, { 0, -4 }, { 1, -4 }, { 2, -4 }, { 3, -4 } },
+					{ { -4, -5 }, { -3, -5 }, { -2, -5 }, { -1, -5 }, { 0, -5 }, { 1, -5 }, { 2, -5 }, { 3,-5 }, { 4, -5 } } };
+
+			for (int warm = 4; warm > 0; warm--) {
+				for (int[] d : delta[4-warm]) {
+					int row = left.i + d[0];
+					int col = left.j + d[1];
+//					System.out.println(row+" "+col);
+					if (!inBoundary(row, col))
+						continue;
+					
+					if (checkRightWalls(temp, row, col)) {
+						temp[row][col] = warm;			
+					}
+				}
+			}
+			addTemp(temp);
 
 		}
 
