@@ -86,23 +86,41 @@ public class Main {
 	}
 
 	public static boolean checkUpWalls(int[][] tempMap, int row, int col) {
+		if (inBoundary(row + 1, col) && walls[0][row + 1][col])
+			return false;
 
 		// 바로 아래에서
-		if (inBoundary(row + 1, col) && tempMap[row + 1][col] > 0 && !walls[1][row + 1][col])
+		if (tempMap[row + 1][col] > 0)
 			return true;
 
 		// 좌측 하단에서 바람이 올때
-		if (inBoundary(row + 1, col - 1) && tempMap[row + 1][col - 1] > 0 && !walls[0][row + 1][col - 1]
-				&& !walls[1][row][col - 1])
+		if (inBoundary(row + 1, col - 1) && tempMap[row + 1][col - 1] > 0 && !walls[1][row + 1][col - 1])
 			return true;
 
 		// 우측 하단에서 바람이 올때
-		if (inBoundary(row + 1, col + 1) && tempMap[row + 1][col + 1] > 0 && !walls[0][row + 1][col + 1]
-				&& !walls[1][row][col - 1])
+		if (inBoundary(row + 1, col + 1) && tempMap[row + 1][col + 1] > 0 && !walls[1][row + 1][col])
 			return true;
 
 		return false;
 
+	}
+	
+	public static boolean checkDownWalls(int[][] tempMap, int row, int col) {
+		if(!inBoundary(row-1, col) || walls[0][row][col]) return false;
+		
+		// 바로 위에서
+		if(tempMap[row-1][col] > 0)
+			return true;
+		
+		// 좌측 상단에서
+		if(inBoundary(row-1, col-1) && tempMap[row-1][col-1] > 0 && !walls[1][row -1][col-1])
+			return true;
+		
+		// 우측 상단에서
+		if(inBoundary(row-1, col+1) && tempMap[row-1][col+1] > 0 && !walls[1][row-1][col])
+			return true;
+		
+		return false;
 	}
 
 	public static void addTemp(int[][] temp) {
@@ -209,11 +227,31 @@ public class Main {
 				}
 			}
 			addTemp(temp);
-
 		}
 
 		for (Point down : machines[4]) {
+			int[][] temp = new int[R + 1][C + 1];
+			if (inBoundary(down.i - 1, down.j))
+				temp[down.i - 1][down.j] = 5;
+			int[][][] delta = { { { 2, -1 }, { 2, 0 }, { 2, 1 } },
+					{ { 3, -2 }, { 3, -1 }, { 3, 0 }, { 3, 1 }, { 3, 2 } },
+					{ { 4, -3 }, { 4, -2 }, { 4, -1 }, { 4, 0 }, { 4, 1 }, { 4, 2 }, { 4, 3 } },
+					{ { 5, -4 }, { 5, -3 }, { 5, -2 }, { 5, -1 }, { 5, 0 }, { 5, 1 }, { 5, 2 }, { 5, 3 },
+							{ -5, 4 } } };
 
+			for (int warm = 4; warm > 0; warm--) {
+				for (int[] d : delta[4 - warm]) {
+					int row = down.i + d[0];
+					int col = down.j + d[1];
+					if (!inBoundary(row, col))
+						continue;
+
+					if (checkUpWalls(temp, row, col)) {
+						temp[row][col] = warm;
+					}
+				}
+			}
+			addTemp(temp);
 		}
 	}
 
