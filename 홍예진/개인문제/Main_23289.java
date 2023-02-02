@@ -259,6 +259,9 @@ public class Main {
 		return 0 < i && 0 < j && i <= R && j <= C;
 	}
 
+        public static void adjust(){}
+
+
 	public static void solve() {
 		blow();
 		// adjust();
