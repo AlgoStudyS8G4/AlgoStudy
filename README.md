@@ -20,7 +20,7 @@ SWEA 클럽 : [8기 광주4반 알고리즘 스터디](https://swexpertacademy.c
 |주차|김세희|이광용|이해민|홍예진|황예은|--비고|
 |-----|-----|-----|-----|-----|-----|-----|
 ||[@shshshee](https://github.com/shshshee)|[@encoreKwang](https://github.com/encoreKwang)|[@leepeace](https://github.com/leepeace)|[@YeJinHong](https://github.com/YeJinHong)|[@ise-yen](https://github.com/ise-yen)||
-|1주차(23.02.04)|||||||
+|1주차(23.02.04)|O(△지름길)|O(△지름길)|O(△특정거리도시찾기)|O(△지름길)|O(X)|-|
 |2주차(23.02.11)|||||||
 |3주차(23.02.18)|||||||
 |4주차(23.02.25)|||||||
@@ -29,7 +29,7 @@ SWEA 클럽 : [8기 광주4반 알고리즘 스터디](https://swexpertacademy.c
 |주차|사이트|문제|비고|
 |:---:|---|---|---|
 |1주차(23.01.28 - 23.02.04)|BOJ|[1446번 지름길](https://www.acmicpc.net/problem/1446)<br/>[18352번 특정 거리의 도시 찾기](https://www.acmicpc.net/problem/18352)|다익스트라 강화 기간|
-|2주차(23.02.04 - 23.02.11)|||
+|2주차(23.02.04 - 23.02.11)|BOJ|[17484번 지운의 달 여행](https://www.acmicpc.net/problem/17484)|
 |3주차(23.02.11 - 23.02.18)|||
 |4주차(23.02.18 - 23.02.25)|||
 
@@ -38,7 +38,7 @@ SWEA 클럽 : [8기 광주4반 알고리즘 스터디](https://swexpertacademy.c
 |---|---|---|---|---|
 |김세희|-|-|-|-|
 |이광용|-|-|-|-|
-|이해민|-|-|-|-|
+|이해민|[BOJ 2346번](https://www.acmicpc.net/problem/2346)|-|-|-|
 |홍예진|-|-|-|-|
 |황예은|-|-|-|-|
 
