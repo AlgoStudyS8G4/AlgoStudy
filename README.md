@@ -6,7 +6,7 @@
 SWEA 클럽 : [8기 광주4반 알고리즘 스터디](https://swexpertacademy.com/main/talk/solvingClub/clubView.do?solveclubId=AYLzCd9qnSYDFATf)
 
 팀 노션 : [알고리즘 스터디](https://aware-energy-8fb.notion.site/c249a1f5c2c249ca9768b9e1c2a24c70)
-## 🏷 11~01월 스터디 계획
+## 🏷 11~02월 스터디 계획
 - 매주 공통으로 푸는 문제 1개 선정
   - 해당 문제는 스터디 날에 리뷰
 - 각자 부족한 분야의 문제 풀이
@@ -14,39 +14,67 @@ SWEA 클럽 : [8기 광주4반 알고리즘 스터디](https://swexpertacademy.c
 
 #### 참고 문제집 : [IT기업 및 대기업 계열사 코테보면서 비슷했던 문제들(지속적으로 업데이트 중)](https://www.acmicpc.net/workbook/view/8708)
 
+## 💡 02월 스터디 진행도
+
+#### 👩‍👦‍👦 참가자 및 공통문제 문제풀이 성공 여부
+|주차|김세희|이광용|이해민|홍예진|황예은|--비고|
+|-----|-----|-----|-----|-----|-----|-----|
+||[@shshshee](https://github.com/shshshee)|[@encoreKwang](https://github.com/encoreKwang)|[@leepeace](https://github.com/leepeace)|[@YeJinHong](https://github.com/YeJinHong)|[@ise-yen](https://github.com/ise-yen)||
+|1주차(23.02.04)|O(△지름길)|O(△지름길)|O(△특정거리도시찾기)|O(△지름길)|O(X)|-|
+|2주차(23.02.11)|||||||
+|3주차(23.02.18)|||||||
+|4주차(23.02.25)|||||||
+
+#### ✒ 공통 풀이 문제
+|주차|사이트|문제|비고|
+|:---:|---|---|---|
+|1주차(23.01.28 - 23.02.04)|BOJ|[1446번 지름길](https://www.acmicpc.net/problem/1446)<br/>[18352번 특정 거리의 도시 찾기](https://www.acmicpc.net/problem/18352)|다익스트라 강화 기간|
+|2주차(23.02.04 - 23.02.11)|BOJ|[17484번 지운의 달 여행](https://www.acmicpc.net/problem/17484)|
+|3주차(23.02.11 - 23.02.18)|||
+|4주차(23.02.18 - 23.02.25)|||
+
+#### ✏ 개인 풀이 문제 : 
+|풀이자|1주차<br/>(23.01.28 - 23.02.04)|2주차<br/>(23.02.04 - 23.02.11)|3주차<br/>(23.02.11 - 23.02.18)|4주차<br/>(23.02.18 - 23.02.25)|
+|---|---|---|---|---|
+|김세희|-|-|-|-|
+|이광용|-|-|-|-|
+|이해민|[BOJ 2346번](https://www.acmicpc.net/problem/2346)|-|-|-|
+|홍예진|-|-|-|-|
+|황예은|-|-|-|-|
+
 
 ## 💡 01월 스터디 진행도
-- 참여여부(공통 문제풀이여부)
 
+#### 👩‍👦‍👦 참가자 및 공통문제 문제풀이 성공 여부
 |주차|김세희|이광용|이해민|홍예진|황예은|--비고|
 |-----|-----|-----|-----|-----|-----|-----|
 ||[@shshshee](https://github.com/shshshee)|[@encoreKwang](https://github.com/encoreKwang)|[@leepeace](https://github.com/leepeace)|[@YeJinHong](https://github.com/YeJinHong)|[@ise-yen](https://github.com/ise-yen)||
 |1주차(23.01.07)||||||휴일|
 |2주차(23.01.14)|O|O|X(-)|O(△)|O(X)|-|
-|3주차(23.01.21)|-|-|-|-|-|-|
-|4주차(23.01.28)|-|-|-|-|-|-|
+|3주차(23.01.21)||||||설휴|
+|4주차(23.01.28)|O(X)|O(O)|O(X)|O(O)|O(X)|-|
 
 #### ✒ 공통 풀이 문제
 |주차|사이트|문제|
 |:---:|---|---|
 |1주차(22.12.31 - 23.01.07)|BOJ|[14719번 빗물](https://www.acmicpc.net/problem/14719)|
 |2주차(23.01.07 - 23.01.14)||1주차와 같음|
-|3주차(23.01.14 - 23.01.21)|BOJ|[5972번 인구이동](https://www.acmicpc.net/problem/5972)|
-|4주차(23.01.21 - 23.01.28)|||
+|3주차(23.01.14 - 23.01.21)|BOJ|[5972번 택배배송](https://www.acmicpc.net/problem/5972)|
+|4주차(23.01.21 - 23.01.28)||3주차와 같음|
 
 #### ✏ 개인 풀이 문제 : 
 |풀이자|1주차<br/>(22.12.31 - 23.01.07)|2주차<br/>(23.01.07 - 23.01.14)|3주차<br/>(23.01.14 - 23.01.21)|4주차<br/>(23.01.21 - 23.01.28)|
 |---|---|---|---|---|
-|김세희|-|[PRO 마법의 엘리베이터](https://school.programmers.co.kr/learn/courses/30/lessons/148653)|-|-|
+|김세희|-|[PRO 마법의 엘리베이터](https://school.programmers.co.kr/learn/courses/30/lessons/148653)|-|[PRO 할인행사](https://school.programmers.co.kr/learn/courses/30/lessons/131127)|
 |이광용|-|-|-|-|
-|이해민|-|-|-|-|
+|이해민|-|-|[BOJ 10799 쇠막대기](https://www.acmicpc.net/problem/10799)|[BOJ 2504 괄호의값](https://www.acmicpc.net/problem/2504)|
 |홍예진|[BOJ 1979](https://www.acmicpc.net/problem/1979)<br/>[BOJ 2212](https://www.acmicpc.net/problem/2212)<br/>[BOJ 15711](https://www.acmicpc.net/problem/15711)|[BOJ 3197](https://www.acmicpc.net/problem/3197)<br/>[BOJ 7579](https://www.acmicpc.net/problem/7579)<br/>[BOJ 2306](https://www.acmicpc.net/problem/2306)<br/>[BOJ 12919](https://www.acmicpc.net/problem/12919)|-|-|
 |황예은|-|-|-|-|
 
 
 ## 💡 12월 스터디 진행도
-- 참여여부(공통 문제풀이여부)
 
+#### 👩‍👦‍👦 참가자 및 공통문제 문제풀이 성공 여부
 |주차|김세희|이광용|이해민|홍예진|황예은|--비고|
 |-----|-----|-----|-----|-----|-----|-----|
 ||[@shshshee](https://github.com/shshshee)|[@encoreKwang](https://github.com/encoreKwang)|[@leepeace](https://github.com/leepeace)|[@YeJinHong](https://github.com/YeJinHong)|[@ise-yen](https://github.com/ise-yen)||
