@@ -262,6 +262,9 @@ public class Main {
         public static void adjust(){}
 
         public static void decrease(){}
+	
+	public static void eatChocolate(){}
+	
 	public static void solve() {
 		blow();
 		// adjust();
