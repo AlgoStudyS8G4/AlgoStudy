@@ -86,7 +86,9 @@ public class Main {
 	}
 
 	public static boolean checkUpWalls(int[][] tempMap, int row, int col) {
-		if (inBoundary(row + 1, col) && walls[0][row + 1][col])
+		if (!inBoundary(row + 1, col))
+			return false;
+		if (walls[0][row + 1][col])
 			return false;
 
 		// 바로 아래에서
@@ -104,22 +106,25 @@ public class Main {
 		return false;
 
 	}
-	
+
 	public static boolean checkDownWalls(int[][] tempMap, int row, int col) {
-		if(!inBoundary(row-1, col) || walls[0][row][col]) return false;
-		
+		if (!inBoundary(row - 1, col))
+			return false;
+		if (walls[0][row][col])
+			return false;
+
 		// 바로 위에서
-		if(tempMap[row-1][col] > 0)
+		if (inBoundary(row - 1, col) && tempMap[row - 1][col] > 0)
 			return true;
-		
+
 		// 좌측 상단에서
-		if(inBoundary(row-1, col-1) && tempMap[row-1][col-1] > 0 && !walls[1][row -1][col-1])
+		if (inBoundary(row - 1, col - 1) && tempMap[row - 1][col - 1] > 0 && !walls[1][row - 1][col - 1])
 			return true;
-		
+
 		// 우측 상단에서
-		if(inBoundary(row-1, col+1) && tempMap[row-1][col+1] > 0 && !walls[1][row-1][col])
+		if (inBoundary(row - 1, col + 1) && tempMap[row - 1][col + 1] > 0 && !walls[1][row - 1][col])
 			return true;
-		
+
 		return false;
 	}
 
@@ -227,17 +232,25 @@ public class Main {
 				}
 			}
 			addTemp(temp);
+		
+			System.out.println("=====[Map]=====");
+			for (int ti = 1; ti <= R; ti++) {
+				for (int tj = 1; tj <= C; tj++) {
+					System.out.print(map[ti][tj] + " ");
+				}
+				System.out.println();
+			}
+			System.out.println(ans);
 		}
 
 		for (Point down : machines[4]) {
 			int[][] temp = new int[R + 1][C + 1];
-			if (inBoundary(down.i - 1, down.j))
-				temp[down.i - 1][down.j] = 5;
+			if (inBoundary(down.i + 1, down.j))
+				temp[down.i + 1][down.j] = 5;
 			int[][][] delta = { { { 2, -1 }, { 2, 0 }, { 2, 1 } },
 					{ { 3, -2 }, { 3, -1 }, { 3, 0 }, { 3, 1 }, { 3, 2 } },
 					{ { 4, -3 }, { 4, -2 }, { 4, -1 }, { 4, 0 }, { 4, 1 }, { 4, 2 }, { 4, 3 } },
-					{ { 5, -4 }, { 5, -3 }, { 5, -2 }, { 5, -1 }, { 5, 0 }, { 5, 1 }, { 5, 2 }, { 5, 3 },
-							{ -5, 4 } } };
+					{ { 5, -4 }, { 5, -3 }, { 5, -2 }, { 5, -1 }, { 5, 0 }, { 5, 1 }, { 5, 2 }, { 5, 3 }, { -5, 4 } } };
 
 			for (int warm = 4; warm > 0; warm--) {
 				for (int[] d : delta[4 - warm]) {
@@ -252,6 +265,15 @@ public class Main {
 				}
 			}
 			addTemp(temp);
+			
+			System.out.println("=====[Map]=====");
+			for (int ti = 1; ti <= R; ti++) {
+				for (int tj = 1; tj <= C; tj++) {
+					System.out.print(map[ti][tj] + " ");
+				}
+				System.out.println();
+			}
+			System.out.println(ans);
 		}
 	}
 
@@ -259,17 +281,58 @@ public class Main {
 		return 0 < i && 0 < j && i <= R && j <= C;
 	}
 
-        public static void adjust(){}
+	public static void adjust() {
+		// 모든 인접한 칸에 대해서 온도가 높은 칸에서 낮은 칸으로 (두 캉의 온도 차)/4 - 소숫자리버림 만큼 온도가 조절된다.
+		int[][] temp = new int[R + 1][C + 1];
+		for (int i = 0; i <= R; i++) {
+			temp[i] = map[i].clone();
+		}
 
-        public static void decrease(){}
-	
-	public static void eatChocolate(){}
-	
+		for (int i = 1; i <= R; i++) {
+			for (int j = 1; j <= C; j++) {
+				// 우측 인접칸, 벽이 없을 때.
+				if (inBoundary(i, j + 1) && !walls[1][i][j]) {
+					int diff = (map[i][j] - map[i][j + 1]) / 4;
+					temp[i][j] -= diff;
+					temp[i][j + 1] += diff;
+				}
+				// 아래측 인접칸, 벽이 없을 때.
+				if (inBoundary(i + 1, j) && !walls[0][i + 1][j]) {
+					int diff = (map[i][j] - map[i + 1][j]) / 4;
+					temp[i][j] -= diff;
+					temp[i + 1][j] += diff;
+				}
+
+			}
+		}
+		addTemp(temp);
+	}
+
+	public static void decreaseSide() {
+		// 온도가 1 이상인 가장 바깥쪽의 온도가 1씩 감소
+		for (int i = 1; i <= R; i++) {
+			if (map[i][1] > 0)
+				map[i][1]--;
+			if (map[i][C] > 0)
+				map[i][C]--;
+		}
+		for (int j = 2; j < C; j++) {
+			if (map[1][j] > 0)
+				map[1][j]--;
+			if (map[R][j] > 0)
+				map[R][j]--;
+		}
+	}
+
+	public static void eatChocolate() {
+		ans++; // 초콜릿을 하나 먹는다.
+	}
+
 	public static void solve() {
 		blow();
-		// adjust();
-		// decrease();
-		// eatChocolate();
+		adjust();
+		decreaseSide();
+		eatChocolate();
 		if (checkTemperature())
 			return;
 	}
