@@ -20,12 +20,18 @@ public class Main {
 			this.i = i;
 			this.j = j;
 		}
+
+		public String toString() {
+			return this.i + ", " + this.j;
+		}
 	}
 
 	public static boolean checkTemperature() {
+
 		for (Point check : checkList) {
-			if (map[check.i][check.j] < K)
+			if (map[check.i][check.j] < K) {
 				return false;
+			}
 		}
 		return true;
 	}
@@ -66,18 +72,14 @@ public class Main {
 
 		// 바로 오른쪽에서
 		if (inBoundary(row, col + 1) && tempMap[row][col + 1] > 0) {
-			System.out.println("오른쪽 벽이 뚫려 있어요.");
 			return true;
-
 		}
 		// 우측 하단에서 바람이 올때
 		if (inBoundary(row + 1, col + 1) && tempMap[row + 1][col + 1] > 0 && !walls[0][row + 1][col + 1]) {
-			System.out.println("오른쪽, 오른쪽 칸의 아래 벽이 뚫려있어요");
 			return true;
 		}
 		// 우측 상단에서 바람이 올때
 		if (inBoundary(row - 1, col + 1) && tempMap[row - 1][col + 1] > 0 && !walls[0][row][col + 1]) {
-			System.out.println("오른쪽, 오른쪽 칸의 위 벽이 뚫려있어요");
 			return true;
 		}
 
@@ -140,7 +142,6 @@ public class Main {
 		// 온풍기에서 오른쪽으로 바람이 한 번 나온다.
 		for (Point right : machines[1]) {
 			int[][] temp = new int[R + 1][C + 1];
-			System.out.println("right : " + right.i + " " + right.j);
 			if (inBoundary(right.i, right.j + 1))
 				temp[right.i][right.j + 1] = 5;
 			int[][][] delta = { { { -1, 2 }, { 0, 2 }, { 1, 2 } },
@@ -152,7 +153,6 @@ public class Main {
 				for (int[] d : delta[4 - warm]) {
 					int row = right.i + d[0];
 					int col = right.j + d[1];
-//					System.out.println(row+" "+col);
 					if (!inBoundary(row, col))
 						continue;
 
@@ -178,34 +178,17 @@ public class Main {
 				for (int[] d : delta[4 - warm]) {
 					int row = left.i + d[0];
 					int col = left.j + d[1];
-//					System.out.println(row+" "+col);
 					if (!inBoundary(row, col))
 						continue;
 
 					if (checkLeftWalls(temp, row, col)) {
 						temp[row][col] = warm;
-						for (int ti = 1; ti <= R; ti++) {
-							for (int tj = 1; tj <= C; tj++) {
-								System.out.print(temp[ti][tj] + " ");
 							}
-							System.out.println();
-						}
-						System.out.println(ans);
-
-					}
 
 				}
 			}
 			addTemp(temp);
 
-			System.out.println("=====[Map]=====");
-			for (int ti = 1; ti <= R; ti++) {
-				for (int tj = 1; tj <= C; tj++) {
-					System.out.print(map[ti][tj] + " ");
-				}
-				System.out.println();
-			}
-			System.out.println(ans);
 
 		}
 
@@ -232,15 +215,7 @@ public class Main {
 				}
 			}
 			addTemp(temp);
-		
-			System.out.println("=====[Map]=====");
-			for (int ti = 1; ti <= R; ti++) {
-				for (int tj = 1; tj <= C; tj++) {
-					System.out.print(map[ti][tj] + " ");
-				}
-				System.out.println();
-			}
-			System.out.println(ans);
+
 		}
 
 		for (Point down : machines[4]) {
@@ -259,21 +234,13 @@ public class Main {
 					if (!inBoundary(row, col))
 						continue;
 
-					if (checkUpWalls(temp, row, col)) {
+					if (checkDownWalls(temp, row, col)) {
 						temp[row][col] = warm;
 					}
 				}
 			}
 			addTemp(temp);
-			
-			System.out.println("=====[Map]=====");
-			for (int ti = 1; ti <= R; ti++) {
-				for (int tj = 1; tj <= C; tj++) {
-					System.out.print(map[ti][tj] + " ");
-				}
-				System.out.println();
-			}
-			System.out.println(ans);
+
 		}
 	}
 
@@ -305,7 +272,10 @@ public class Main {
 
 			}
 		}
-		addTemp(temp);
+
+		for (int i = 0; i <= R; i++) {
+			map[i] = temp[i].clone();
+		}
 	}
 
 	public static void decreaseSide() {
@@ -329,12 +299,18 @@ public class Main {
 	}
 
 	public static void solve() {
-		blow();
-		adjust();
-		decreaseSide();
-		eatChocolate();
-		if (checkTemperature())
-			return;
+
+		while (true) {
+			blow();
+			adjust();
+
+			decreaseSide();
+			eatChocolate();
+
+			if (checkTemperature())
+				break;
+		}
+		System.out.println(ans);
 	}
 
 	public static void main(String[] args) throws IOException {
@@ -377,12 +353,6 @@ public class Main {
 
 		ans = 0;
 		solve();
-		for (int ti = 1; ti <= R; ti++) {
-			for (int tj = 1; tj <= C; tj++) {
-				System.out.print(map[ti][tj] + " ");
-			}
-			System.out.println();
-		}
-		System.out.println(ans);
+		
 	}
 }
