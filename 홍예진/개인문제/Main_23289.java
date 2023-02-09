@@ -276,6 +276,7 @@ public class Main {
 		for (int i = 0; i <= R; i++) {
 			map[i] = temp[i].clone();
 		}
+
 	}
 
 	public static void decreaseSide() {
