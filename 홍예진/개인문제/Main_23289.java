@@ -14,15 +14,12 @@ public class Main {
 
 	static class Point {
 		int i, j;
-
-		public Point(int i, int j) {
+		int temp;
+		public Point(int i, int j, int temp) {
 			super();
 			this.i = i;
 			this.j = j;
-		}
-
-		public String toString() {
-			return this.i + ", " + this.j;
+			this.temp = temp;
 		}
 	}
 
@@ -183,12 +180,11 @@ public class Main {
 
 					if (checkLeftWalls(temp, row, col)) {
 						temp[row][col] = warm;
-							}
+					}
 
 				}
 			}
 			addTemp(temp);
-
 
 		}
 
@@ -276,7 +272,6 @@ public class Main {
 		for (int i = 0; i <= R; i++) {
 			map[i] = temp[i].clone();
 		}
-
 	}
 
 	public static void decreaseSide() {
@@ -301,17 +296,31 @@ public class Main {
 
 	public static void solve() {
 
+		blow();
+		// 온도가 올라간 곳의 리스트만 딴다.
+		ArrayList<Point> tempList = new ArrayList<>();
+		for (int i = 1; i <= R; i++) {
+			for (int j = 1; j <= C; j++) {
+				if (map[i][j] > 0)
+					tempList.add(new Point(i, j, map[i][j]));
+			}
+		}
+
 		while (true) {
-			blow();
 			adjust();
 
 			decreaseSide();
 			eatChocolate();
 
-			if (checkTemperature())
+			if (checkTemperature()) {
 				break;
+			}
+			
+			for(Point p : tempList) {
+				map[p.i][p.j] += p.temp;
+			}
 		}
-		System.out.println(ans);
+		System.out.println(ans > 100 ? 101 : ans);
 	}
 
 	public static void main(String[] args) throws IOException {
@@ -333,11 +342,11 @@ public class Main {
 				int num = Integer.parseInt(st.nextToken());
 				map[i][j] = num;
 				if (num == 5) {
-					checkList.add(new Point(i, j));
+					checkList.add(new Point(i, j, 0));
 					map[i][j] = 0;
 				} else if (num > 0) {
 					map[i][j] = 0;
-					machines[num].add(new Point(i, j));
+					machines[num].add(new Point(i, j, 0));
 				}
 			}
 		}
@@ -354,6 +363,6 @@ public class Main {
 
 		ans = 0;
 		solve();
-		
+
 	}
 }
