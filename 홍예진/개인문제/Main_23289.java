@@ -33,6 +33,7 @@ public class Main {
 		return true;
 	}
 
+
 	public static int[][] getClone() {
 		int[][] clone = new int[R][C];
 		for (int i = 0; i < R; i++)
