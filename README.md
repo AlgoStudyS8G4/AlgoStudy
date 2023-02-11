@@ -21,7 +21,7 @@ SWEA 클럽 : [8기 광주4반 알고리즘 스터디](https://swexpertacademy.c
 |-----|-----|-----|-----|-----|-----|-----|
 ||[@shshshee](https://github.com/shshshee)|[@encoreKwang](https://github.com/encoreKwang)|[@leepeace](https://github.com/leepeace)|[@YeJinHong](https://github.com/YeJinHong)|[@ise-yen](https://github.com/ise-yen)||
 |1주차(23.02.04)|O(△지름길)|O(△지름길)|O(△특정거리도시찾기)|O(△지름길)|O(X)|-|
-|2주차(23.02.11)|||||||
+|2주차(23.02.11)|O(X)|O(X)|O(X)|X(X)|O(X)|-|
 |3주차(23.02.18)|||||||
 |4주차(23.02.25)|||||||
 
@@ -30,7 +30,7 @@ SWEA 클럽 : [8기 광주4반 알고리즘 스터디](https://swexpertacademy.c
 |:---:|---|---|---|
 |1주차(23.01.28 - 23.02.04)|BOJ|[1446번 지름길](https://www.acmicpc.net/problem/1446)<br/>[18352번 특정 거리의 도시 찾기](https://www.acmicpc.net/problem/18352)|다익스트라 강화 기간|
 |2주차(23.02.04 - 23.02.11)|BOJ|[17484번 지운의 달 여행](https://www.acmicpc.net/problem/17484)|
-|3주차(23.02.11 - 23.02.18)|||
+|3주차(23.02.11 - 23.02.18)|BOJ|[17484번 지운의 달 여행](https://www.acmicpc.net/problem/17484)|재시도
 |4주차(23.02.18 - 23.02.25)|||
 
 #### ✏ 개인 풀이 문제 : 
