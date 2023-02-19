@@ -39,7 +39,7 @@ SWEA 클럽 : [8기 광주4반 알고리즘 스터디](https://swexpertacademy.c
 |---|---|---|---|---|
 |김세희|-|-|[BOJ 1309번](https://www.acmicpc.net/problem/1309)|-|
 |이광용|-|-|-|-|
-|이해민|[BOJ 2346번](https://www.acmicpc.net/problem/2346)|-|[BOJ 29111번](https://www.acmicpc.net/problem/29111)|-|
+|이해민|[BOJ 2346번](https://www.acmicpc.net/problem/2346)|-|[BOJ 2961번](https://www.acmicpc.net/problem/2961)|-|
 |홍예진|-|-|-|-|
 |황예은|-|-|-|-|
 
