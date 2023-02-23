@@ -14,7 +14,19 @@ public class Solution {
 			B = Integer.parseInt(st.nextToken());
 			K = Integer.parseInt(st.nextToken());
 			
-			System.out.println("#"+tc+" ");
+			while(K-- > 0) {
+				if(A < B) {
+					int min = A;
+					A += min;
+					B -= min;
+				} else {
+					int min = B;
+					A -= min;
+					B += min;
+				}
+			}
+			
+			System.out.println("#"+tc+" "+Math.min(A, B));
 		}
 	}
 }
