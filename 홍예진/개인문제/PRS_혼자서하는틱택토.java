@@ -25,11 +25,13 @@ class Solution {
 	private boolean isEndGame(String[] board) {
 		char[][] charBoard = new char[board.length][board[0].length()];
 		int idx = 0;
+		// 가로로 연속
 		for(String str : board) {
 			if(str.equals("OOO") || str.equals("XXX")) return true;
 			charBoard[idx++] = str.toCharArray();
 		}
 		
+		// 세로로 연속
 		for(int j = 0; j < 3; j++) {
 			String str = "";
 			for(int i = 0; i < 3; i++) {
@@ -38,6 +40,7 @@ class Solution {
 			if(str.equals("OOO") || str.equals("XXX")) return true;
 		}
 		
+		// 대각선으로 연속
 		if(charBoard[0][0] == charBoard[1][1] && charBoard[1][1] == charBoard[2][2] && charBoard[1][1] != '.') return true;
 		if(charBoard[0][2] == charBoard[1][1] && charBoard[1][1] == charBoard[2][0] && charBoard[1][1] != '.') return true;
 		
