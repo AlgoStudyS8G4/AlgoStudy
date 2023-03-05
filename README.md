@@ -6,7 +6,7 @@
 SWEA 클럽 : [8기 광주4반 알고리즘 스터디](https://swexpertacademy.com/main/talk/solvingClub/clubView.do?solveclubId=AYLzCd9qnSYDFATf)
 
 팀 노션 : [알고리즘 스터디](https://aware-energy-8fb.notion.site/c249a1f5c2c249ca9768b9e1c2a24c70)
-## 🏷 11~02월 스터디 계획
+## 🏷 11~03월 스터디 계획
 - 매주 공통으로 푸는 문제 1개 선정
   - 해당 문제는 스터디 날에 리뷰
 - 각자 부족한 분야의 문제 풀이
@@ -15,16 +15,46 @@ SWEA 클럽 : [8기 광주4반 알고리즘 스터디](https://swexpertacademy.c
 #### 프로그래머스 lv.2(실전위주)[https://school.programmers.co.kr/learn/challenges?order=recent&page=1&levels=2]
 #### 참고 문제집 : [IT기업 및 대기업 계열사 코테보면서 비슷했던 문제들(지속적으로 업데이트 중)](https://www.acmicpc.net/workbook/view/8708)
 
+
+## 💡 03월 스터디 진행도
+
+#### 👩‍👦‍👦 참가자 및 공통문제 문제풀이 성공 여부-[출석(풀이여부)]
+|주차|김세희|이광용|이해민|홍예진|황예은|--비고|
+|-----|-----|-----|-----|-----|-----|-----|
+||[@shshshee](https://github.com/shshshee)|[@encoreKwang](https://github.com/encoreKwang)|[@leepeace](https://github.com/leepeace)|[@YeJinHong](https://github.com/YeJinHong)|[@ise-yen](https://github.com/ise-yen)||
+|1주차(23.03.04)|O(O)|O(O)|O(X)|O(△)|O(X)||
+|2주차(23.03.11)|||||||
+|3주차(23.03.18)|||||||
+|4주차(23.03.25)|||||||
+
+#### ✒ 공통 풀이 문제
+|주차|사이트|문제|비고|
+|:---:|---|---|---|
+|1주차(23.02.25 - 23.03.04)|PRG|[전화번호목록](https://school.programmers.co.kr/learn/courses/30/lessons/42577)|
+|2주차(23.03.04 - 23.03.11)|BOJ|[꿀따기](https://www.acmicpc.net/problem/21758)|
+|3주차(23.03.11 - 23.03.18)|||
+|4주차(23.03.18 - 23.03.25)|||
+
+#### ✏ 개인 풀이 문제 : 
+|풀이자|1주차<br/>(23.02.25 - 23.03.04)|2주차<br/>(23.03.04 - 23.03.11)|3주차<br/>(23.03.11 - 23.03.18)|4주차<br/>(23.03.18 - 23.03.25)|
+|---|---|---|---|---|
+|김세희|-|-|-|-|
+|이광용|-|-|-|-|
+|이해민|-|-|-|-|
+|홍예진|[BOJ 2023번](https://www.acmicpc.net/problem/2023)|-|-|-|
+|황예은|-|-|-|-|
+
+
 ## 💡 02월 스터디 진행도
 
-#### 👩‍👦‍👦 참가자 및 공통문제 문제풀이 성공 여부
+#### 👩‍👦‍👦 참가자 및 공통문제 문제풀이 성공 여부-[출석(풀이여부)]
 |주차|김세희|이광용|이해민|홍예진|황예은|--비고|
 |-----|-----|-----|-----|-----|-----|-----|
 ||[@shshshee](https://github.com/shshshee)|[@encoreKwang](https://github.com/encoreKwang)|[@leepeace](https://github.com/leepeace)|[@YeJinHong](https://github.com/YeJinHong)|[@ise-yen](https://github.com/ise-yen)||
 |1주차(23.02.04)|O(△지름길)|O(△지름길)|O(△특정거리도시찾기)|O(△지름길)|O(X)|-|
 |2주차(23.02.11)|O(X)|O(X)|O(X)|X(X)|O(X)|-|
 |3주차(23.02.18)|O(X)|O(X)|O(O)|X(O)|O(X)|-|
-|4주차(23.02.25)|X(X)|O(X)|X(X)|O(X)|X(X)|-|
+|4주차(23.02.25)|O(X)|O(O)|O(O)|O(O)|O(X)|회식|
 
 #### ✒ 공통 풀이 문제
 |주차|사이트|문제|비고|
