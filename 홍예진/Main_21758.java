@@ -1,32 +1,38 @@
 import java.util.Scanner;
 
+// not solved. 24점.
 public class Main {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		int N = sc.nextInt();
-		int middle = 0; // 벌통을 가운데 둘 때, 꿀의 양이 최대가 되려면 필요한 최대값.
-		int left = 0; // 벌통을 왼쪽에 둘 때, 꿀의 양이 최대가 되는 값.
-		int right = 0; // 벌통을 오른쪽에 둘 때, 꿀의 양이 최대가 되는 값.
-		int[] sum = new int[N + 1]; // accumulateSum[i] : 0~i까지의 누적합
-		sum[1] = sc.nextInt();
-		// 양끝을 제외한 가운데 값.
-		for (int i = 2; i < N; i++) {
-			int honey = sc.nextInt();
-			middle = Math.max(middle, honey);
-			sum[i] = sum[i - 1] + honey;
-			left = Math.max(sum[i] - 2 * honey, left);
-			right = Math.max(-(sum[i] + honey), right);
-		}
-		sum[N] = sum[N - 1] + sc.nextInt();
-
 		int max = 0;
-		// case 1. 벌통을 가운데 둘 때. 벌은 양 옆에 두고 벌통은 최대값위치에 두는 것이 최선.
-		max = Math.max(max, sum[N - 1] + middle - sum[1]);
-		// case 2. 벝통을 왼쪽 끝에 둘 때,
-		max = Math.max(max, sum[N - 1] - 2 * sum[1] + left);
-		// cas2 3. 벌통을 오른쪽 끝에 둘 때,
-		max = Math.max(max, 2 * sum[N] - sum[1] + right);
+		int maxIdx = 0;
+		int[] arr = new int[N + 1];
+		int[] sum = new int[N + 1]; // accumulateSum[i] : 0~i까지의 누적합
+		arr[1] = sc.nextInt();
+		sum[1] = arr[1];
+		for (int i = 2; i < N; i++) {
+			arr[i] = sc.nextInt();
+			sum[i] = sum[i - 1] + arr[i];
+			if (max < arr[i]) {
+				max = arr[i];
+				maxIdx = i;
+			}
+		}
+		arr[N] = sc.nextInt();
+		sum[N] = sum[N - 1] + arr[N];
 
-		System.out.println(max);
+		int ans = sum[N - 1] - arr[1] + arr[maxIdx]; // 양 끝에 벌을, 가운데 중 가장 큰 값에 벌통을 놓은 경우.
+
+		for (int i = 1; i <= N; i++) {
+			for (int j = i + 1; j <= N; j++) {
+				for (int r = j + 1; r <= N; r++) {
+					ans = Math.max(ans, (sum[j-1] - sum[i - 1]) + (sum[r-1] - sum[i - 1] - arr[j]));
+					ans = Math.max(ans, (sum[r] - sum[i] - arr[j]) + (sum[r] - sum[j]));
+				}
+			}
+		}
+
+		System.out.println(ans);
 	}
 }
