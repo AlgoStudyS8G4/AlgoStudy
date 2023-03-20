@@ -23,8 +23,8 @@ SWEA 클럽 : [8기 광주4반 알고리즘 스터디](https://swexpertacademy.c
 |-----|-----|-----|-----|-----|-----|-----|
 ||[@shshshee](https://github.com/shshshee)|[@encoreKwang](https://github.com/encoreKwang)|[@leepeace](https://github.com/leepeace)|[@YeJinHong](https://github.com/YeJinHong)|[@ise-yen](https://github.com/ise-yen)||
 |1주차(23.03.04)|O(O)|O(O)|O(X)|O(△)|O(X)||
-|2주차(23.03.11)|||||||
-|3주차(23.03.18)|||||||
+|2주차(23.03.11)|O()|O()|O()|O()|O(X)||
+|3주차(23.03.18)|-|-|-|-|-|회식|
 |4주차(23.03.25)|||||||
 
 #### ✒ 공통 풀이 문제
@@ -32,8 +32,8 @@ SWEA 클럽 : [8기 광주4반 알고리즘 스터디](https://swexpertacademy.c
 |:---:|---|---|---|
 |1주차(23.02.25 - 23.03.04)|PRG|[전화번호목록](https://school.programmers.co.kr/learn/courses/30/lessons/42577)|
 |2주차(23.03.04 - 23.03.11)|BOJ|[꿀따기](https://www.acmicpc.net/problem/21758)|
-|3주차(23.03.11 - 23.03.18)|||
-|4주차(23.03.18 - 23.03.25)|||
+|3주차(23.03.11 - 23.03.18)|BOJ|[철도공사](https://www.acmicpc.net/problem/23309)|
+|4주차(23.03.18 - 23.03.25)|PRG|[](https://school.programmers.co.kr/learn/courses/30/lessons/42885)|
 
 #### ✏ 개인 풀이 문제 : 
 |풀이자|1주차<br/>(23.02.25 - 23.03.04)|2주차<br/>(23.03.04 - 23.03.11)|3주차<br/>(23.03.11 - 23.03.18)|4주차<br/>(23.03.18 - 23.03.25)|
