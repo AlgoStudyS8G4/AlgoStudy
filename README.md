@@ -1,31 +1,103 @@
 # AlgoStudy
-알고리즘 스터디
+👨‍💻 알고리즘 스터디 👨‍💻
 
-백준 그룹 : [AlgoStudyS8G4](https://www.acmicpc.net/group/15464)
+## 🎲 목차
+> 🏷 [개요](#-개요)<br>
+> 🏷 [스터디 계획](#-스터디-계획)
 
-SWEA 클럽 : [8기 광주4반 알고리즘 스터디](https://swexpertacademy.com/main/talk/solvingClub/clubView.do?solveclubId=AYLzCd9qnSYDFATf)
+#### 2023년
+> 💡 [2023년 03월 스터디 진행도](#-03월-스터디-진행도)<br>
+> 💡 [2023년 02월 스터디 결과](#-02월-스터디-결과)<br>
+> 💡 [2023년 01월 스터디 결과](#-01월-스터디-결과)<br>
 
-팀 노션 : [알고리즘 스터디](https://aware-energy-8fb.notion.site/c249a1f5c2c249ca9768b9e1c2a24c70)
-## 🏷 11~03월 스터디 계획
+#### 2022년
+> 💡 [2022년 12월 스터디 결과](#-12월-스터디-결과)<br>
+> 💡 [2022년 11월 스터디 결과](#-11월-스터디-결과)<br>
+> 💡 [2022년 10월 스터디 결과](#-10월-스터디-결과)<br>
+> 💡 [2022년 09월 스터디 결과](#-09월-스터디-결과)<br>
+> 💡 [2022년 08월 스터디 결과](#-08월-스터디-결과)<br>
+
+<br>
+
+> > > > > > ---
+
+<br>
+
+## 🏷 개요
+
+#### 스터디그룹 :
+- 백준 그룹: [AlgoStudyS8G4](https://www.acmicpc.net/group/15464)
+- SWEA 클럽: [8기 광주4반 알고리즘 스터디](https://swexpertacademy.com/main/talk/solvingClub/clubView.do?solveclubId=AYLzCd9qnSYDFATf)
+- 팀 노션: [알고리즘 스터디](https://aware-energy-8fb.notion.site/c249a1f5c2c249ca9768b9e1c2a24c70)
+
+#### 참고 문제집 : 
+- [프로그래머스 lv.2(실전위주)](https://school.programmers.co.kr/learn/challenges?order=recent&page=1&levels=2)
+- [IT기업 및 대기업 계열사 코테보면서 비슷했던 문제들(지속적으로 업데이트 중)](https://www.acmicpc.net/workbook/view/8708)
+
+
+<br>
+
+## 🏷 스터디 계획
+
+### 📆 04월 스터디 계획
+- 매주 공통으로 푸는 문제 1개 선정
+  - 해당 문제는 스터디 날에 리뷰
+  - 프로그래머스 위주로 풀이
+- 각자 부족한 분야의 문제 풀이
+  - 해당 문제는 스터디 날에 결과 보고 및 도움 받기
+
+### 📆 11~03월 스터디 계획
 - 매주 공통으로 푸는 문제 1개 선정
   - 해당 문제는 스터디 날에 리뷰
 - 각자 부족한 분야의 문제 풀이
   - 해당 문제는 스터디 날에 결과 보고 및 도움 받기
 
-#### 프로그래머스 lv.2(실전위주)[https://school.programmers.co.kr/learn/challenges?order=recent&page=1&levels=2]
-#### 참고 문제집 : [IT기업 및 대기업 계열사 코테보면서 비슷했던 문제들(지속적으로 업데이트 중)](https://www.acmicpc.net/workbook/view/8708)
+
+<br>
+
+## 💡 04월 스터디 진행도
+
+#### 👩‍👦‍👦 참가자 및 공통문제 문제풀이 성공 여부-[출석(풀이여부)]
+|주차|김세희|이광용|이해민|홍예진|황예은|--비고|
+|-----|-----|-----|-----|-----|-----|-----|
+||[@shshshee](https://github.com/shshshee)|[@encoreKwang](https://github.com/encoreKwang)|[@leepeace](https://github.com/leepeace)|[@YeJinHong](https://github.com/YeJinHong)|[@ise-yen](https://github.com/ise-yen)||
+|1주차(23.04.01)|||||||
+|2주차(23.04.08)|||||||
+|3주차(23.04.15)|||||||
+|4주차(23.04.22)|||||||
+|5주차(23.04.29)|||||||
+
+#### ✒ 공통 풀이 문제
+|주차|사이트|문제|비고|
+|:---:|---|---|---|
+|1주차(23.03.25 - 23.04.01)|PRG|[카펫](https://school.programmers.co.kr/learn/courses/30/lessons/42842)|
+|2주차(23.04.01 - 23.04.08)|||
+|3주차(23.04.08 - 23.04.15)|||
+|4주차(23.04.15 - 23.04.22)|||
+|5주차(23.04.22 - 23.04.29)|||
+
+#### ✏ 개인 풀이 문제
+|풀이자|1주차<br/>(23.03.25 - 23.04.01)|2주차<br/>(23.04.01 - 23.04.08)|3주차<br/>(23.04.08 - 23.04.15)|4주차<br/>(23.04.15 - 23.04.22)|5주차<br/>(23.04.22 - 23.04.29)|
+|---|---|---|---|---|---|
+|김세희|-|-|-|-|-|
+|이광용|-|-|-|-|-|
+|이해민|-|-|-|-|-|
+|홍예진|-|-|-|-|-|
+|황예은|-|-|-|-|-|
 
 
-## 💡 03월 스터디 진행도
+<br>
+
+## 💡 03월 스터디 결과
 
 #### 👩‍👦‍👦 참가자 및 공통문제 문제풀이 성공 여부-[출석(풀이여부)]
 |주차|김세희|이광용|이해민|홍예진|황예은|--비고|
 |-----|-----|-----|-----|-----|-----|-----|
 ||[@shshshee](https://github.com/shshshee)|[@encoreKwang](https://github.com/encoreKwang)|[@leepeace](https://github.com/leepeace)|[@YeJinHong](https://github.com/YeJinHong)|[@ise-yen](https://github.com/ise-yen)||
 |1주차(23.03.04)|O(O)|O(O)|O(X)|O(△)|O(X)||
-|2주차(23.03.11)|O()|O()|O()|O()|O(X)||
-|3주차(23.03.18)|-|-|-|-|-|회식|
-|4주차(23.03.25)|||||||
+|2주차(23.03.11)|O()|O(O)|O(△)|O()|O(X)||
+|3주차(23.03.18)|-()|-(O)|-(△)|-()|-(X)|회식|
+|4주차(23.03.25)|X()|O(X)|O(O)|X()|O(X)||
 
 #### ✒ 공통 풀이 문제
 |주차|사이트|문제|비고|
@@ -33,19 +105,21 @@ SWEA 클럽 : [8기 광주4반 알고리즘 스터디](https://swexpertacademy.c
 |1주차(23.02.25 - 23.03.04)|PRG|[전화번호목록](https://school.programmers.co.kr/learn/courses/30/lessons/42577)|
 |2주차(23.03.04 - 23.03.11)|BOJ|[꿀따기](https://www.acmicpc.net/problem/21758)|
 |3주차(23.03.11 - 23.03.18)|BOJ|[철도공사](https://www.acmicpc.net/problem/23309)|
-|4주차(23.03.18 - 23.03.25)|PRG|[](https://school.programmers.co.kr/learn/courses/30/lessons/42885)|
+|4주차(23.03.18 - 23.03.25)|PRG|[구명보트](https://school.programmers.co.kr/learn/courses/30/lessons/42885)|
 
-#### ✏ 개인 풀이 문제 : 
+#### ✏ 개인 풀이 문제
 |풀이자|1주차<br/>(23.02.25 - 23.03.04)|2주차<br/>(23.03.04 - 23.03.11)|3주차<br/>(23.03.11 - 23.03.18)|4주차<br/>(23.03.18 - 23.03.25)|
 |---|---|---|---|---|
 |김세희|-|-|-|-|
 |이광용|-|-|-|-|
 |이해민|-|-|-|-|
 |홍예진|[BOJ 2023번](https://www.acmicpc.net/problem/2023)|-|-|-|
-|황예은|-|-|-|-|
+|황예은|-|-|-|[BOJ 25304번](https://www.acmicpc.net/problem/25304)|
 
 
-## 💡 02월 스터디 진행도
+<br>
+
+## 💡 02월 스터디 결과
 
 #### 👩‍👦‍👦 참가자 및 공통문제 문제풀이 성공 여부-[출석(풀이여부)]
 |주차|김세희|이광용|이해민|홍예진|황예은|--비고|
@@ -64,7 +138,7 @@ SWEA 클럽 : [8기 광주4반 알고리즘 스터디](https://swexpertacademy.c
 |3주차(23.02.11 - 23.02.18)|BOJ|[17484번 진우의 달 여행](https://www.acmicpc.net/problem/17484)|재시도
 |4주차(23.02.18 - 23.02.25)|PRG|[튜플](https://school.programmers.co.kr/learn/courses/30/lessons/64065)|
 
-#### ✏ 개인 풀이 문제 : 
+#### ✏ 개인 풀이 문제
 |풀이자|1주차<br/>(23.01.28 - 23.02.04)|2주차<br/>(23.02.04 - 23.02.11)|3주차<br/>(23.02.11 - 23.02.18)|4주차<br/>(23.02.18 - 23.02.25)|
 |---|---|---|---|---|
 |김세희|-|-|[BOJ 1309번](https://www.acmicpc.net/problem/1309)|-|
@@ -74,7 +148,9 @@ SWEA 클럽 : [8기 광주4반 알고리즘 스터디](https://swexpertacademy.c
 |황예은|-|-|-|-|
 
 
-## 💡 01월 스터디 진행도
+<br>
+
+## 💡 01월 스터디 결과
 
 #### 👩‍👦‍👦 참가자 및 공통문제 문제풀이 성공 여부
 |주차|김세희|이광용|이해민|홍예진|황예은|--비고|
@@ -93,7 +169,7 @@ SWEA 클럽 : [8기 광주4반 알고리즘 스터디](https://swexpertacademy.c
 |3주차(23.01.14 - 23.01.21)|BOJ|[5972번 택배배송](https://www.acmicpc.net/problem/5972)|
 |4주차(23.01.21 - 23.01.28)||3주차와 같음|
 
-#### ✏ 개인 풀이 문제 : 
+#### ✏ 개인 풀이 문제
 |풀이자|1주차<br/>(22.12.31 - 23.01.07)|2주차<br/>(23.01.07 - 23.01.14)|3주차<br/>(23.01.14 - 23.01.21)|4주차<br/>(23.01.21 - 23.01.28)|
 |---|---|---|---|---|
 |김세희|-|[PRO 마법의 엘리베이터](https://school.programmers.co.kr/learn/courses/30/lessons/148653)|-|[PRO 할인행사](https://school.programmers.co.kr/learn/courses/30/lessons/131127)|
@@ -103,7 +179,9 @@ SWEA 클럽 : [8기 광주4반 알고리즘 스터디](https://swexpertacademy.c
 |황예은|-|-|-|-|
 
 
-## 💡 12월 스터디 진행도
+<br>
+
+## 💡 12월 스터디 결과
 
 #### 👩‍👦‍👦 참가자 및 공통문제 문제풀이 성공 여부
 |주차|김세희|이광용|이해민|홍예진|황예은|--비고|
@@ -124,7 +202,7 @@ SWEA 클럽 : [8기 광주4반 알고리즘 스터디](https://swexpertacademy.c
 |4주차(22.12.17 - 22.12.24)|BOJ|[22233번 가희와 키워드](https://www.acmicpc.net/problem/22233)|
 |5주차(22.12.24 - 22.12.31)|BOJ|[15989번 1, 2, 3 더하기 4](https://www.acmicpc.net/problem/15989)<br/>[17615번 볼모으기](https://www.acmicpc.net/problem/17615)|
 
-#### ✏ 개인 풀이 문제 : 
+#### ✏ 개인 풀이 문제
 |풀이자|1주차<br/>(22.11.26 - 22.12.03)|2주차<br/>(22.12.03 - 22.12.10)|3주차<br/>(22.12.10 - 22.12.17)|4주차<br/>(22.12.17 - 22.12.24)|5주차<br/>(22.12.24 - 22.12.31)|
 |---|---|---|---|---|---|
 |김세희|[PRO 피로도](https://school.programmers.co.kr/learn/courses/30/lessons/87946)|-|-|-|-|
@@ -133,6 +211,8 @@ SWEA 클럽 : [8기 광주4반 알고리즘 스터디](https://swexpertacademy.c
 |홍예진|[SWEA 나무높이](https://swexpertacademy.com/main/code/userProblem/userProblemDetail.do?contestProbId=AYFofW8qpXYDFAR4)<br/>[SWEA 프로세서 연결하기](https://swexpertacademy.com/main/code/problem/problemDetail.do?contestProbId=AV4suNtaXFEDFAUf)<br/>[BOJ 17471번 게리맨더링](https://www.acmicpc.net/problem/17471)|-|[BOJ 마법사 상어와 복제](https://www.acmicpc.net/problem/23290)<br/>[BOJ 주사위 굴리기 2](https://www.acmicpc.net/problem/23288)|[BOJ 어항정리](https://www.acmicpc.net/problem/23291)<br/>[BOJ 야구공이모티콘](https://www.acmicpc.net/problem/17281)|[BOJ 평범한 배낭](https://www.acmicpc.net/problem/12865)|-|
 |황예은|[SWEA 나무높이](https://swexpertacademy.com/main/code/userProblem/userProblemDetail.do?contestProbId=AYFofW8qpXYDFAR4)<br/>[SWEA 프로세서 연결하기](https://swexpertacademy.com/main/code/problem/problemDetail.do?contestProbId=AV4suNtaXFEDFAUf)|-|-|-|-|
 
+
+<br>
 
 ## 💡 11월 스터디 결과
 
@@ -153,7 +233,7 @@ SWEA 클럽 : [8기 광주4반 알고리즘 스터디](https://swexpertacademy.c
 |3주차(22.11.12 - 22.11.19)|BOJ|[21921번 블로그](https://www.acmicpc.net/problem/21921)|
 |4주차(22.11.19 - 22.11.26)|SWEA|[2105번 디저트카페](https://swexpertacademy.com/main/code/problem/problemDetail.do?contestProbId=AV5VwAr6APYDFAWu)|
 
-#### ✏ 개인 풀이 문제 : 
+#### ✏ 개인 풀이 문제
 |풀이자|1주차<br/>(22.10.29 - 22.11.05)|2주차<br/>(22.11.05 - 22.11.12)|3주차<br/>(22.11.12 - 22.11.19)|4주차<br/>(22.11.19 - 22.11.26)|
 |---|---|---|---|---|
 |김세희|[BOJ 10836번 여왕벌](https://www.acmicpc.net/problem/10836)|[BOJ 2186번 문자판](https://www.acmicpc.net/problem/2186)|[BOJ 1965번 상자넣기](https://www.acmicpc.net/problem/1965)|-|
@@ -162,6 +242,8 @@ SWEA 클럽 : [8기 광주4반 알고리즘 스터디](https://swexpertacademy.c
 |홍예진|개인일정으로 휴일|[BOJ 1629번 곱셉](https://www.acmicpc.net/problem/1626)|-|-|
 |황예은|-|-|-|-|
 
+
+<br>
 
 ## 💡 10월 스터디 결과
 
@@ -190,14 +272,18 @@ SWEA 클럽 : [8기 광주4반 알고리즘 스터디](https://swexpertacademy.c
 
 
 
-## 💡 9월 스터디 결과
+<br>
+
+## 💡 09월 스터디 결과
 #### 👩‍👦‍👦 참가자
 |김상현|김세희|이광용|이해민|홍예진|황예은|
 |-----|-----|-----|-----|-----|-----|
 |[@haan823](https://github.com/haan823)|[@shshshee](https://github.com/shshshee)|[@encoreKwang](https://github.com/encoreKwang)|[@leepeace](https://github.com/leepeace)|[@YeJinHong](https://github.com/YeJinHong)|[@ise-yen](https://github.com/ise-yen)|
 
 
-## 💡 8월 스터디 결과
+<br>
+
+## 💡 08월 스터디 결과
 #### 스터디 그룹 : [AlgoStudyS8G4](https://www.acmicpc.net/group/15464)
 
 

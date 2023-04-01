@@ -1,0 +1,17 @@
+#include<iostream>
+
+using namespace std;
+
+int main(){
+    int X, N, sum=0;
+    cin >> X >> N;
+    
+    for(int i=0; i<N; i++){
+        int m, c;
+        cin >> m >> c;
+        sum += m*c;
+    }
+    
+    (X==sum) ? cout << "Yes" :cout << "No";
+    return 0;
+}
