@@ -95,13 +95,11 @@
 |4주차(23.03.18 - 23.03.25)|PRG|[구명보트](https://school.programmers.co.kr/learn/courses/30/lessons/42885)|
 
 #### ✏ 개인 풀이 문제
-|풀이자|1주차<br/>(23.02.25 - 23.03.04)|2주차<br/>(23.03.04 - 23.03.11)|3주차<br/>(23.03.11 - 23.03.18)|4주차<br/>(23.03.18 - 23.03.25)|
-|---|---|---|---|---|
-|김세희|-|-|-|-|
-|이광용|-|-|-|-|
-|이해민|-|-|-|-|
-|홍예진|[BOJ 2023번](https://www.acmicpc.net/problem/2023)|-|-|-|
-|황예은|-|-|-|[BOJ 25304번](https://www.acmicpc.net/problem/25304)|
+**1주차**
+- 홍예진 [BOJ 2023번](https://www.acmicpc.net/problem/2023)
+
+**4주차**
+- 황예은 [BOJ 25304번](https://www.acmicpc.net/problem/25304)
 
 
 <br>
@@ -126,14 +124,12 @@
 |4주차(23.02.18 - 23.02.25)|PRG|[튜플](https://school.programmers.co.kr/learn/courses/30/lessons/64065)|
 
 #### ✏ 개인 풀이 문제
-|풀이자|1주차<br/>(23.01.28 - 23.02.04)|2주차<br/>(23.02.04 - 23.02.11)|3주차<br/>(23.02.11 - 23.02.18)|4주차<br/>(23.02.18 - 23.02.25)|
-|---|---|---|---|---|
-|김세희|-|-|[BOJ 1309번](https://www.acmicpc.net/problem/1309)|-|
-|이광용|-|-|-|-|
-|이해민|[BOJ 2346번](https://www.acmicpc.net/problem/2346)|-|[BOJ 2961번](https://www.acmicpc.net/problem/2961)|-|
-|홍예진|-|-|-|-|
-|황예은|-|-|-|-|
+**1주차**
+- 이해민 [BOJ 2346번](https://www.acmicpc.net/problem/2346)
 
+**3주차**
+- 김세희 [BOJ 1309번](https://www.acmicpc.net/problem/1309)
+- 이해민 [BOJ 2961번](https://www.acmicpc.net/problem/2961)
 
 <br>
 
@@ -157,13 +153,19 @@
 |4주차(23.01.21 - 23.01.28)||3주차와 같음|
 
 #### ✏ 개인 풀이 문제
-|풀이자|1주차<br/>(22.12.31 - 23.01.07)|2주차<br/>(23.01.07 - 23.01.14)|3주차<br/>(23.01.14 - 23.01.21)|4주차<br/>(23.01.21 - 23.01.28)|
-|---|---|---|---|---|
-|김세희|-|[PRO 마법의 엘리베이터](https://school.programmers.co.kr/learn/courses/30/lessons/148653)|-|[PRO 할인행사](https://school.programmers.co.kr/learn/courses/30/lessons/131127)|
-|이광용|-|-|-|-|
-|이해민|-|-|[BOJ 10799 쇠막대기](https://www.acmicpc.net/problem/10799)|[BOJ 2504 괄호의값](https://www.acmicpc.net/problem/2504)|
-|홍예진|[BOJ 1979](https://www.acmicpc.net/problem/1979)<br/>[BOJ 2212](https://www.acmicpc.net/problem/2212)<br/>[BOJ 15711](https://www.acmicpc.net/problem/15711)|[BOJ 3197](https://www.acmicpc.net/problem/3197)<br/>[BOJ 7579](https://www.acmicpc.net/problem/7579)<br/>[BOJ 2306](https://www.acmicpc.net/problem/2306)<br/>[BOJ 12919](https://www.acmicpc.net/problem/12919)|-|-|
-|황예은|-|-|-|-|
+**1주차**
+- 홍예진 [BOJ 1979](https://www.acmicpc.net/problem/1979) **/** [BOJ 2212](https://www.acmicpc.net/problem/2212) **/** [BOJ 15711](https://www.acmicpc.net/problem/15711)
+
+**2주차**
+- 김세희 [PRO 마법의 엘리베이터](https://school.programmers.co.kr/learn/courses/30/lessons/148653)
+- 홍예진 [BOJ 3197](https://www.acmicpc.net/problem/3197) **/** [BOJ 7579](https://www.acmicpc.net/problem/7579) **/** [BOJ 2306](https://www.acmicpc.net/problem/2306) **/** [BOJ 12919](https://www.acmicpc.net/problem/12919)
+
+**3주차**
+- 이해민 [BOJ 10799 쇠막대기](https://www.acmicpc.net/problem/10799)
+
+**4주차**
+- 김세희 [PRO 할인행사](https://school.programmers.co.kr/learn/courses/30/lessons/131127)
+- 이해민 [BOJ 2504 괄호의값](https://www.acmicpc.net/problem/2504)
 
 
 <br>
@@ -190,13 +192,28 @@
 |5주차(22.12.24 - 22.12.31)|BOJ|[15989번 1, 2, 3 더하기 4](https://www.acmicpc.net/problem/15989)<br/>[17615번 볼모으기](https://www.acmicpc.net/problem/17615)|
 
 #### ✏ 개인 풀이 문제
-|풀이자|1주차<br/>(22.11.26 - 22.12.03)|2주차<br/>(22.12.03 - 22.12.10)|3주차<br/>(22.12.10 - 22.12.17)|4주차<br/>(22.12.17 - 22.12.24)|5주차<br/>(22.12.24 - 22.12.31)|
-|---|---|---|---|---|---|
-|김세희|[PRO 피로도](https://school.programmers.co.kr/learn/courses/30/lessons/87946)|-|-|-|-|
-|이광용|[BOJ 18808번 스티커붙이기](https://www.acmicpc.net/problem/18808)|-|-|[BOJ 최단경로](https://www.acmicpc.net/problem/1753)|-|
-|이해민|[SWEA 나무높이](https://swexpertacademy.com/main/code/userProblem/userProblemDetail.do?contestProbId=AYFofW8qpXYDFAR4)<br/>[SWEA 프로세서 연결하기](https://swexpertacademy.com/main/code/problem/problemDetail.do?contestProbId=AV4suNtaXFEDFAUf)|[BOJ 최단경로](https://www.acmicpc.net/problem/1753)|-|[BOJ 로봇 청소기](https://www.acmicpc.net/problem/14503)|[BOJ 유기농 배추](https://www.acmicpc.net/problem/1012)|
-|홍예진|[SWEA 나무높이](https://swexpertacademy.com/main/code/userProblem/userProblemDetail.do?contestProbId=AYFofW8qpXYDFAR4)<br/>[SWEA 프로세서 연결하기](https://swexpertacademy.com/main/code/problem/problemDetail.do?contestProbId=AV4suNtaXFEDFAUf)<br/>[BOJ 17471번 게리맨더링](https://www.acmicpc.net/problem/17471)|-|[BOJ 마법사 상어와 복제](https://www.acmicpc.net/problem/23290)<br/>[BOJ 주사위 굴리기 2](https://www.acmicpc.net/problem/23288)|[BOJ 어항정리](https://www.acmicpc.net/problem/23291)<br/>[BOJ 야구공이모티콘](https://www.acmicpc.net/problem/17281)|[BOJ 평범한 배낭](https://www.acmicpc.net/problem/12865)|-|
-|황예은|[SWEA 나무높이](https://swexpertacademy.com/main/code/userProblem/userProblemDetail.do?contestProbId=AYFofW8qpXYDFAR4)<br/>[SWEA 프로세서 연결하기](https://swexpertacademy.com/main/code/problem/problemDetail.do?contestProbId=AV4suNtaXFEDFAUf)|-|-|-|-|
+**1주차**
+- 김세희 [PRO 피로도](https://school.programmers.co.kr/learn/courses/30/lessons/87946)
+- 이광용 [BOJ 18808번 스티커붙이기](https://www.acmicpc.net/problem/18808)
+- 이해민 [SWEA 나무높이](https://swexpertacademy.com/main/code/userProblem/userProblemDetail.do?contestProbId=AYFofW8qpXYDFAR4) **/** [SWEA 프로세서 연결하기](https://swexpertacademy.com/main/code/problem/problemDetail.do?contestProbId=AV4suNtaXFEDFAUf)
+- 홍예진 [SWEA 나무높이](https://swexpertacademy.com/main/code/userProblem/userProblemDetail.do?contestProbId=AYFofW8qpXYDFAR4) **/** [SWEA 프로세서 연결하기](https://swexpertacademy.com/main/code/problem/problemDetail.do?contestProbId=AV4suNtaXFEDFAUf) **/** [BOJ 17471번 게리맨더링](https://www.acmicpc.net/problem/17471)
+
+- 황예은 [SWEA 나무높이](https://swexpertacademy.com/main/code/userProblem/userProblemDetail.do?contestProbId=AYFofW8qpXYDFAR4) **/** [SWEA 프로세서 연결하기](https://swexpertacademy.com/main/code/problem/problemDetail.do?contestProbId=AV4suNtaXFEDFAUf)
+
+**2주차**
+- 이해민 [BOJ 최단경로](https://www.acmicpc.net/problem/1753)
+
+**3주차**
+- 홍예진 [BOJ 마법사 상어와 복제](https://www.acmicpc.net/problem/23290) **/** [BOJ 주사위 굴리기 2](https://www.acmicpc.net/problem/23288)
+
+**4주차**
+- 이광용 [BOJ 최단경로](https://www.acmicpc.net/problem/1753)
+- 이해민 [BOJ 로봇 청소기](https://www.acmicpc.net/problem/14503)
+- 홍예진 [BOJ 어항정리](https://www.acmicpc.net/problem/23291) **/** [BOJ 야구공이모티콘](https://www.acmicpc.net/problem/17281)
+  
+**5주차**
+- 이해민 [BOJ 유기농 배추](https://www.acmicpc.net/problem/1012)
+- 홍예진 [BOJ 평범한 배낭](https://www.acmicpc.net/problem/12865)
 
 
 <br>
@@ -221,13 +238,21 @@
 |4주차(22.11.19 - 22.11.26)|SWEA|[2105번 디저트카페](https://swexpertacademy.com/main/code/problem/problemDetail.do?contestProbId=AV5VwAr6APYDFAWu)|
 
 #### ✏ 개인 풀이 문제
-|풀이자|1주차<br/>(22.10.29 - 22.11.05)|2주차<br/>(22.11.05 - 22.11.12)|3주차<br/>(22.11.12 - 22.11.19)|4주차<br/>(22.11.19 - 22.11.26)|
-|---|---|---|---|---|
-|김세희|[BOJ 10836번 여왕벌](https://www.acmicpc.net/problem/10836)|[BOJ 2186번 문자판](https://www.acmicpc.net/problem/2186)|[BOJ 1965번 상자넣기](https://www.acmicpc.net/problem/1965)|-|
-|이광용|-|-|[BOJ 4963번 섬의 개수](https://www.acmicpc.net/problem/4963)|[SWEA 1949번 등산로](https://swexpertacademy.com/main/code/problem/problemDetail.do?contestProbId=AV5PoOKKAPIDFAUq),<br/>[SWEA 2112번 보호 필름](https://swexpertacademy.com/main/code/problem/problemDetail.do?contestProbId=AV5V1SYKAaUDFAWu)|
-|이해민|[SWEA 1486번 장훈이의 높은 선반](https://swexpertacademy.com/main/code/problem/problemDetail.do?contestProbId=AV2b7Yf6ABcBBASw)|[SWEA 1949번 등산로](https://swexpertacademy.com/main/code/problem/problemDetail.do?contestProbId=AV5PoOKKAPIDFAUq)|-|-|
-|홍예진|개인일정으로 휴일|[BOJ 1629번 곱셉](https://www.acmicpc.net/problem/1626)|-|-|
-|황예은|-|-|-|-|
+**1주차**
+- 김세희 [BOJ 10836번 여왕벌](https://www.acmicpc.net/problem/10836)
+- 이해민 [SWEA 1486번 장훈이의 높은 선반](https://swexpertacademy.com/main/code/problem/problemDetail.do?contestProbId=AV2b7Yf6ABcBBASw)
+**2주차**
+- 김세희 [BOJ 2186번 문자판](https://www.acmicpc.net/problem/2186)
+- 이해민 [SWEA 1949번 등산로](https://swexpertacademy.com/main/code/problem/problemDetail.do?contestProbId=AV5PoOKKAPIDFAUq)
+- 홍예진 [BOJ 1629번 곱셉](https://www.acmicpc.net/problem/1626) 
+
+**3주차**
+- 김세희 [BOJ 1965번 상자넣기](https://www.acmicpc.net/problem/1965)
+- 이광용 [BOJ 4963번 섬의 개수](https://www.acmicpc.net/problem/4963)
+
+**4주차**
+- 이광용 [SWEA 1949번 등산로](https://swexpertacademy.com/main/code/problem/problemDetail.do?contestProbId=AV5PoOKKAPIDFAUq) **/** [SWEA 2112번 보호 필름](https://swexpertacademy.com/main/code/problem/problemDetail.do?contestProbId=AV5V1SYKAaUDFAWu)
+
 
 
 <br>
@@ -247,14 +272,13 @@
 |3주차(22.10.14 - 22.10.21)|-|스터디 방식 토의 및 수정|
 |4주차(22.10.21 - 22.10.29)|BOJ|[1446번 지름길](https://www.acmicpc.net/problem/1446)
 
-#### ✏ 개인 풀이 문제 : 10월 4주차(22.10.21 - 22.10.29)
-|풀이자|사이트|문제|
-|---|---|---|
-|김세희|BOJ|[1406번 에디터](https://www.acmicpc.net/problem/1406)|
-|이광용|BOJ|[1231번 주식왕 동호](https://www.acmicpc.net/problem/1231)|
-|이해민|SWEA|[1952번 수영장](https://swexpertacademy.com/main/code/problem/problemDetail.do?contestProbId=AV5PpFQaAQMDFAUq)|
-|홍예진|BOJ|[1231번 주식왕 동호](https://www.acmicpc.net/problem/1231)|
-|황예은|BOJ|[1231번 주식왕 동호](https://www.acmicpc.net/problem/1231)|
+#### ✏ 개인 풀이 문제
+**4주차**
+- 김세희 [BOJ 1406번 에디터](https://www.acmicpc.net/problem/1406)
+- 이광용 [BOJ 1231번 주식왕 동호](https://www.acmicpc.net/problem/1231)
+- 이해민 [SWEA 1952번 수영장](https://swexpertacademy.com/main/code/problem/problemDetail.do?contestProbId=AV5PpFQaAQMDFAUq)
+- 홍예진 [BOJ 1231번 주식왕 동호](https://www.acmicpc.net/problem/1231)
+- 황예은 [BOJ1231번 주식왕 동호](https://www.acmicpc.net/problem/1231)
 
 
 
